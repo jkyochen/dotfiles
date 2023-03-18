@@ -86,6 +86,10 @@ source $ZSH/oh-my-zsh.sh
 # brew Brewfile path
 export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
 
+# sdkman
+export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
