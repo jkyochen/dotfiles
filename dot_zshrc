@@ -120,3 +120,6 @@ alias vi="nvim"
 
 # exercism alias
 alias em="exercism"
+
+# chezmoi alias
+alias cm="chezmoi"
