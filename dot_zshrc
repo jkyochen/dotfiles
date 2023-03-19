@@ -117,3 +117,6 @@ export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
 # use neovim to replace vim/vi
 alias vim="nvim"
 alias vi="nvim"
+
+# exercism alias
+alias em="exercism"
