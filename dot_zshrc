@@ -101,6 +101,7 @@ export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
