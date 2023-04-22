@@ -5,7 +5,7 @@ Managed by [chezmoi](https://www.chezmoi.io/).
 ### Installation
 
 ```sh
-chezmoi init --apply jikyou
+chezmoi init --apply jkyochen
 ```
 
 > Install chezmoi and apply dotfiles
