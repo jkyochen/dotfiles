@@ -11,5 +11,5 @@ chezmoi init --apply jikyou
 > Install chezmoi and apply dotfiles
 
 ```sh
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply jikyou
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply jkyochen
 ```
