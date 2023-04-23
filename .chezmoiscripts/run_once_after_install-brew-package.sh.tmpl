@@ -3,5 +3,5 @@ set -x
 
 {{ if (eq .chezmoi.os "darwin") -}}
 # Installing Brew package
-brew bundle
+brew bundle --no-upgrade
 {{ end -}}
