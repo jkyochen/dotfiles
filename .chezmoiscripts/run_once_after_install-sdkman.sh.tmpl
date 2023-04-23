@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -x
+
+{{ if or (eq .chezmoi.os "darwin") (eq .osid "linux-ubuntu") -}}
+curl -s "https://get.sdkman.io" | bash
+{{ end -}}
