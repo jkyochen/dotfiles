@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -x
 
-{{ if or (eq .chezmoi.os "darwin") (eq .osid "linux-ubuntu") -}}
+{{ if or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux") -}}
 
+# https://asdf-vm.com/
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 . "$HOME/.asdf/asdf.sh"
@@ -12,4 +13,11 @@ asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf plugin add go https://github.com/asdf-community/asdf-golang.git
 asdf plugin add python https://github.com/asdf-community/asdf-python.git
 asdf plugin add rust https://github.com/asdf-community/asdf-rust.git
+
+asdf install nodejs latest
+asdf install ruby latest
+asdf install go latest
+asdf install python latest
+asdf install rust latest
+
 {{ end -}}
