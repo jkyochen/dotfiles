@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-{{ if or (eq .chezmoi.os "darwin") (eq .chezmoi.os "
-    linux") -}}
+{{ if or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux") -}}
 
 # https://sdkman.io/
 curl -s "https://get.sdkman.io" | bash
