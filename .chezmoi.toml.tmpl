@@ -1,5 +1,3 @@
-sourceDir = {{ .chezmoi.sourceDir | quote }}
-
 {{- $osID := .chezmoi.os -}}
 {{- if (and (eq .chezmoi.os "linux") (hasKey .chezmoi.osRelease "id")) -}}
 {{-   $osID = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
@@ -10,3 +8,4 @@ sourceDir = {{ .chezmoi.sourceDir | quote }}
 [data]
     osid = {{ $osID | quote }}
     codespaces = {{ $codespaces }}
+    sourceDir = {{ .chezmoi.sourceDir | quote }}
