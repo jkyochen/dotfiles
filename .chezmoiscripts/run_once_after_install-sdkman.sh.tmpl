@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-{{ if or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux") -}}
+{{ if and (or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux")) (not .codespaces) -}}
 
 # https://sdkman.io/
 curl -s "https://get.sdkman.io" | bash

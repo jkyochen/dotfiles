@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-{{ if and (eq .osid "linux-ubuntu") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft")) -}}
+{{ if and (eq .osid "linux-ubuntu") (not (.chezmoi.kernel.osrelease | lower | contains "microsoft")) (not .codespaces) -}}
 
 # docker
 # https://docs.docker.com/engine/install/ubuntu/

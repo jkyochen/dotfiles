@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-{{ if or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux") -}}
+{{ if and (or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux")) (not .codespaces) -}}
 
 # https://asdf-vm.com/
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
