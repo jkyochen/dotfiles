@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 # brew Brewfile path
 export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
+export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
 
 # sdkman
 source "$HOME/.sdkman/bin/sdkman-init.sh"
