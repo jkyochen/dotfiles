@@ -123,7 +123,7 @@ alias vi="nvim"
 alias em="exercism"
 
 # chezmoi alias
-alias cm="chezmoi"
+alias ch="chezmoi"
 alias brew-restore="brew bundle --no-upgrade"
 alias brew-backup="brew bundle dump -f"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
