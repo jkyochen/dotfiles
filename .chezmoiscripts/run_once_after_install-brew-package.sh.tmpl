@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -x
-
-{{ if (eq .chezmoi.os "darwin") -}}
-# Installing Brew package
-brew bundle --no-upgrade
-{{ end -}}
