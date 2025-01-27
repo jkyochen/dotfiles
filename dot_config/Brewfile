@@ -98,7 +98,6 @@ cask "karabiner-elements"
 cask "keycastr"
 cask "keycombiner"
 cask "keymapp"
-cask "kindle"
 cask "librewolf"
 cask "lulu"
 cask "mactracker"
@@ -116,7 +115,6 @@ cask "openemu"
 cask "optimage"
 cask "oversight"
 cask "pdf-expert"
-cask "postman"
 cask "qq"
 cask "rapidapi"
 cask "raspberry-pi-imager"
@@ -170,7 +168,6 @@ mas "Juice", id: 1478610778
 mas "Kana Origin", id: 1439222882
 mas "Keynote", id: 409183694
 mas "Klib", id: 1196268448
-mas "LINE", id: 539883307
 mas "Mastonaut", id: 1450757574
 mas "MindNode", id: 1289197285
 mas "Mona", id: 1659154653
@@ -186,7 +183,6 @@ mas "PushDeer", id: 1596771139
 mas "Screen Recorder by Omi", id: 1592987853
 mas "SnippetsLab", id: 1006087419
 mas "Spark", id: 1176895641
-mas "TingYue", id: 645926554
 mas "Tomito", id: 1526042938
 mas "Userscripts-Mac-App", id: 1463298887
 mas "Window Tidy", id: 456609775
