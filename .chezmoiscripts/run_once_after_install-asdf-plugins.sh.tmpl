@@ -3,10 +3,8 @@ set -x
 
 {{ if and (or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux")) (not .codespaces) -}}
 
-# https://asdf-vm.com/
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-
-. "$HOME/.asdf/asdf.sh"
+# mkdir -p "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
+# asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
 
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
@@ -14,15 +12,15 @@ asdf plugin add go https://github.com/asdf-community/asdf-golang.git
 asdf plugin add python https://github.com/asdf-community/asdf-python.git
 
 asdf install nodejs latest
-asdf global nodejs latest
+asdf set nodejs latest
 
 asdf install ruby latest
-asdf global ruby latest
+asdf set ruby 3.4.2
 
 asdf install go latest
-asdf global go latest
+asdf set go latest
 
 asdf install python latest
-asdf global python latest
+asdf set python 3.13.2
 
 {{ end -}}
