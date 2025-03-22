@@ -3,7 +3,7 @@ set -x
 
 {{ if and (or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux")) (not .codespaces) -}}
 
-if ! command -v brew &> /dev/null; then
+if ! command -v asdf &> /dev/null; then
     brew install asdf
 fi
 
