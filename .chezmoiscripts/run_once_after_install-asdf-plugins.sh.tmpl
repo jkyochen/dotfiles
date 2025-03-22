@@ -3,6 +3,10 @@ set -x
 
 {{ if and (or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux")) (not .codespaces) -}}
 
+if ! command -v brew &> /dev/null; then
+    brew install asdf
+fi
+
 # mkdir -p "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
 # asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
 
