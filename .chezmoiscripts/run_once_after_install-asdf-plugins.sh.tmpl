@@ -3,17 +3,17 @@ set -x
 
 {{ if and (or (eq .chezmoi.os "darwin") (eq .chezmoi.os "linux")) (not .codespaces) -}}
 
-if ! command -v asdf &> /dev/null; then
-    brew install asdf
-fi
+# if ! command -v asdf &> /dev/null; then
+#     brew install asdf
+# fi
 
 # mkdir -p "${ASDF_DATA_DIR:-$HOME/.asdf}/completions"
 # asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
 
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf plugin add go https://github.com/asdf-community/asdf-golang.git
-asdf plugin add python https://github.com/asdf-community/asdf-python.git
+# asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+# asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+# asdf plugin add go https://github.com/asdf-community/asdf-golang.git
+# asdf plugin add python https://github.com/asdf-community/asdf-python.git
 
 # asdf install nodejs latest
 # asdf set nodejs latest

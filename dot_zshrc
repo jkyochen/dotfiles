@@ -88,6 +88,10 @@ source $ZSH/oh-my-zsh.sh
 # brew Brewfile path
 # export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
 export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
+export HOMEBREW_CASK_OPTS="--appdir=/Volumes/Vault/Applications"
+
+# ollama
+export OLLAMA_MODELS=/Volumes/Vault/ollama/
 
 # sdkman https://sdkman.io/
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -95,9 +99,9 @@ export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
 # asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # append completions to fpath
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 # initialise completions with ZSH's compinit
-autoload -Uz compinit && compinit
+# autoload -Uz compinit && compinit
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -130,9 +134,11 @@ alias vi="nvim"
 
 # exercism alias
 alias em="exercism"
+alias zj="zellij"
 
 # chezmoi alias
 alias chemo="chezmoi"
 alias brew-restore="brew bundle --no-upgrade --file"
 alias brew-backup="brew bundle dump -f --file"
+
 export PATH="/usr/local/opt/libpq/bin:$PATH"
