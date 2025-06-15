@@ -141,4 +141,7 @@ alias chemo="chezmoi"
 alias brew-restore="brew bundle --no-upgrade --file"
 alias brew-backup="brew bundle dump -f --file"
 
+# claude
+alias yolo="claude --dangerously-skip-permissions"
+
 export PATH="/usr/local/opt/libpq/bin:$PATH"
