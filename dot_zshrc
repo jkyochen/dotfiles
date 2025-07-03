@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # brew Brewfile path
 # export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
 export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
-export HOMEBREW_CASK_OPTS="--appdir=/Volumes/Vault/Applications"
+# export HOMEBREW_CASK_OPTS="--appdir=/Volumes/Vault/Applications"
 
 # ollama
 export OLLAMA_MODELS=/Volumes/Vault/ollama/
@@ -96,10 +96,9 @@ export OLLAMA_MODELS=/Volumes/Vault/ollama/
 # sdkman https://sdkman.io/
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-# append completions to fpath
-# fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# mise
+eval "$(mise activate zsh)"
+
 # initialise completions with ZSH's compinit
 # autoload -Uz compinit && compinit
 
@@ -143,5 +142,8 @@ alias brew-backup="brew bundle dump -f --file"
 
 # claude
 alias yolo="claude --dangerously-skip-permissions"
+
+# git commit
+# git commit --amend --no-edit --date="$(date)"
 
 export PATH="/usr/local/opt/libpq/bin:$PATH"
