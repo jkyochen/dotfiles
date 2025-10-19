@@ -1,4 +1,20 @@
 [tools]
+bun = "latest"
+deno = "latest"
 go = "latest"
 node = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:@google/gemini-cli" = "latest"
+"npm:@openai/codex" = "latest"
+"npm:@qwen-code/qwen-code" = "latest"
+"npm:pnpm" = "latest"
+"npm:serve" = "latest"
+"npm:tsx" = "latest"
 python = "latest"
+ruby = "latest"
+uv = "latest"
+
+[settings]
+python.uv_venv_auto = true
+idiomatic_version_file_enable_tools = []
+experimental = true

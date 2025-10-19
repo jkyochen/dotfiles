@@ -4,6 +4,11 @@ export PATH=$HOME/.ghcup/bin:$PATH
 
 export PATH=$PATH:$HOME/.local/bin
 
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# plsql
+export PATH="/usr/local/opt/libpq/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -87,11 +92,13 @@ source $ZSH/oh-my-zsh.sh
 
 # brew Brewfile path
 # export HOMEBREW_BUNDLE_FILE="$HOME/.config/Brewfile"
-export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
+# export HOMEBREW_BUNDLE_DUMP_NO_VSCODE=true
 # export HOMEBREW_CASK_OPTS="--appdir=/Volumes/Vault/Applications"
 
 # ollama
 export OLLAMA_MODELS=/Volumes/Vault/ollama/
+# colima
+export COLIMA_HOME=/Volumes/Vault/colima/
 
 # sdkman https://sdkman.io/
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -114,6 +121,9 @@ eval "$(mise activate zsh)"
 #   export EDITOR='mvim'
 # fi
 export EDITOR='nvim'
+
+export LANG=en_US.UTF-8 
+export LC_ALL=en_US.UTF-8
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -146,4 +156,3 @@ alias yolo="claude --dangerously-skip-permissions"
 # git commit
 # git commit --amend --no-edit --date="$(date)"
 
-export PATH="/usr/local/opt/libpq/bin:$PATH"
