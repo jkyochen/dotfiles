@@ -81,7 +81,7 @@ DISABLE_AUTO_UPDATE=true
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z asdf zsh-autosuggestions zsh-syntax-highlighting fzf)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fzf)
 
 # zsh-completions config
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -102,9 +102,6 @@ export COLIMA_HOME=/Volumes/Vault/colima/
 
 # sdkman https://sdkman.io/
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# mise
-eval "$(mise activate zsh)"
 
 # initialise completions with ZSH's compinit
 # autoload -Uz compinit && compinit
@@ -146,7 +143,7 @@ alias em="exercism"
 alias zj="zellij"
 
 # chezmoi alias
-alias chemo="chezmoi"
+alias cz="chezmoi"
 alias brew-restore="brew bundle --no-upgrade --file"
 alias brew-backup="brew bundle dump -f --file"
 
@@ -156,3 +153,7 @@ alias yolo="claude --dangerously-skip-permissions"
 # git commit
 # git commit --amend --no-edit --date="$(date)"
 
+# mise
+eval "$(mise activate zsh)"
+
+eval "$(zoxide init zsh --cmd cd)"
